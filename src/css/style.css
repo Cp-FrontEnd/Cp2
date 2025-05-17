@@ -141,3 +141,17 @@ span {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.car-image {
+  width: 300px;
+}
+
+.car-text {
+  max-width: 400px;
+  font-size: x-large;
+}
