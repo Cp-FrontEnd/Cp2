@@ -22,6 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  background-color: #1c1c1c;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -71,9 +72,16 @@ a:hover {
 }
 
 header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
 }
 header h1 {
   font-size: 4rem;
@@ -83,18 +91,16 @@ header h1 {
 .header-menu {
   display: flex;
   gap: 20px;
+  position: relative;
+  left: -30px;
 }
 span {
   color: var(--color-font4);
 }
 
-#titulo {
-  display: flex;
-  justify-content: center;
-  font-size: 3rem;
-}
-
 #titulo_nav {
+  top: 0px;
+  left: 20px;
   font-family: "Lucida Sans";
 }
 
@@ -106,7 +112,24 @@ span {
     text-align: center;
     flex-direction: column;
   }
-  #titulo {
-    font-size: 2rem;
-  }
+}
+.produtos img {
+  width: 700px;
+  height: 500px;
+}
+.produtos {
+  text-align: center;
+  font-size: 15rem;
+  color: white;
+}
+.titulo {
+  text-align: center;
+  font-size: 62px;
+  color: white;
+}
+#divisoria {
+  max-width: 1280px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
