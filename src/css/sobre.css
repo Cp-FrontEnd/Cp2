@@ -1,0 +1,157 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    font-family: 'Lucida Sans';
+}
+
+:root{
+    --color-font1:#fff;
+    --color-font2:#333;
+    --color-font3:rgb(4,25,32);
+    --color-font4:rgb(0, 255, 234);
+    --gradient:linear-gradient(to top,rgba(0,0,0,0.6),rgba(0,0,0,0.3));
+    --font-size:4rem;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #1c1c1c;
+}
+nav ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:var(--color-font1);
+    font-weight: 900;
+    transition: color 0.3s;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+a:hover{
+    color:var(--color-font4);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 5px;
+    border-radius: 15px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+header h1{
+    font-size: 4rem;
+    position: relative;
+}
+
+.header-menu{
+    display: flex;
+    gap:20px;
+    
+}
+span{
+    color:var(--color-font4);
+}
+
+#titulo_nav{
+    font-family: 'Lucida Sans';
+    color: #fff;
+}
+nav ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:var(--color-font1);
+    font-weight: 900;
+    transition: color 0.3s;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+a:hover{
+    color:red;
+}
+section main{
+    display: flex;
+    width: 100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    
+}
+#content{
+    width:100%;
+    background-image:url("/Cp2/src/assets/imgs/carro_eletrico_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.as{
+    width: 60%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    margin-left:50px;
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding:20px;
+    gap: 20px;
+}
+#titulo-atencao{
+    font-size:3rem;
+    text-align: center;
+    color: white;
+}
+#texto{
+    color: white;
+    font-size: 1.7rem;
+}
+footer{
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+footer ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+.display{
+    height:20vh;
+    border-bottom: groove 1px;
+    padding:10px;
+}
+#titulo_footer{
+    font-family: 'Lucida Sans';
+    color: #fff;
+    font-size:2rem;
+}
+@media(width <=1024px){
+   .header-menu{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+   }
+   #titulo{
+    font-size: 2rem;
+   }
+   .as{
+    height: 50vh;
+    flex-direction: column;
+   }
+}
