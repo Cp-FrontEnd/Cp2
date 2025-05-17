@@ -123,21 +123,35 @@ footer{
     padding: 20px;
     color: white;
     background-color: black;
+    justify-content: center;
 }
 footer ul li{
     list-style: none;
     padding: 10px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .display{
     height:20vh;
     border-bottom: groove 1px;
     padding:10px;
 }
+#display2{
+    width:100%;
+    display: flex;
+    height:20vh;
+    padding:10px;
+    justify-content: space-between;
+}
 #titulo_footer{
     font-family: 'Lucida Sans';
     color: #fff;
     font-size:2rem;
+}
+#navegacao{
+    display: flex;
+    width: 40%;
+    padding: 20px;
+    gap: 20px;
 }
 @media(width <=1024px){
    .header-menu{
