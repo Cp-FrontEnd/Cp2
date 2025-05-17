@@ -57,6 +57,7 @@ a:hover {
   align-items: center;
   text-align: center;
   color: var(--color-font1);
+  background-size: contain;
 }
 
 .hero-bg {
@@ -69,6 +70,14 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+}
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que o GIF se ajuste sem perder qualidade */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 header {
@@ -119,7 +128,6 @@ span {
 }
 .produtos {
   text-align: center;
-  font-size: 15rem;
   color: white;
 }
 .titulo {

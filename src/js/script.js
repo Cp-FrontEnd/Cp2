@@ -1,15 +1,19 @@
 const imagens = [
-  "src/assets/imgs/carro_eletrico_1.jpg",
-  "src/assets/imgs/carro_eletrico_2.jpg",
-  "src/assets/imgs/bandeira_baiha.jpg"
+  "src/assets/imgs/carrogif.gif",
+  "src/assets/imgs/carroe4.jpg",
+  "src/assets/imgs/carroeletrico.jpeg"
 ];
 
 let indice = 0;
 
+// Criar elemento <img> dentro da hero-bg
+const imgElement = document.createElement("img");
+imgElement.src = imagens[indice];
+document.querySelector(".hero-bg").appendChild(imgElement);
+
 function trocarFundo() {
-  document.querySelector(".hero-bg").style.backgroundImage = `url('${imagens[indice]}')`;
+  imgElement.src = imagens[indice];
   indice = (indice + 1) % imagens.length;
 }
 
-trocarFundo();
-setInterval(trocarFundo, 5000);
+setInterval(trocarFundo, 3000);
