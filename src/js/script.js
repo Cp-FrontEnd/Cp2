@@ -7,7 +7,7 @@ const imagens = [
 let indice = 0;
 
 function trocarFundo() {
-  document.body.style.backgroundImage = `url('${imagens[indice]}')`;
+  document.querySelector(".hero-bg").style.backgroundImage = `url('${imagens[indice]}')`;
   indice = (indice + 1) % imagens.length;
 }
 
