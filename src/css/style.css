@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+li{
+    font-family: 'Lucida Sans';
+}
 
 :root{
     --color-font1:#fff;
@@ -19,7 +22,9 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 img{
     display: block;
@@ -40,6 +45,7 @@ a{
 a:hover{
     color:var(--color-font4);
 }
+
 .hero{
     width: 100%;
     min-height: 100vh;
@@ -52,6 +58,7 @@ a:hover{
     flex-direction: column;
     justify-content: space-between;
 }
+
 header{
     display: flex;
     justify-content: space-between;
