@@ -90,7 +90,7 @@ section main{
 }
 #content{
     width:100%;
-    background-image:url("/Cp2/src/assets/imgs/carro_eletrico_3.jpg");
+    background-image:url("../assets/imgs/carro_eletrico_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     justify-items: center;
