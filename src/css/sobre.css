@@ -12,7 +12,7 @@ li{
     --color-font1:#fff;
     --color-font2:#333;
     --color-font3:rgb(4,25,32);
-    --color-font4:rgb(0, 255, 234);
+    --color-font4:#ff0000;
     --gradient:linear-gradient(to top,rgba(0,0,0,0.6),rgba(0,0,0,0.3));
     --font-size:4rem;
 }
