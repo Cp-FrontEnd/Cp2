@@ -3,13 +3,57 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
-body {
-  background-color: #1c1c1c;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
+li{font-family: 'Lucida Sans';}
+nav ul{list-style: none;}
+
+a{
+    text-decoration: none;
+    color:var(--color-font1);
+    font-weight: 900;
+    transition: color 0.3s;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+a:hover{
+    color:var(--color-font4);
+}
+
+header {
+  background-color:rgba(0, 0, 0, 0.4);
+  align-items: center;
+  color: rgb(207, 2, 2);
+  padding: 20px;
+  width: 90%;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1{
+    font-size: 4rem;
+    position: relative;
+}
+
+.header-menu{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  color: aliceblue;
+}
+
+
+body{
+   background-image: url('../assets/imgs/Tesla.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   justify-items: center;
+   align-items: center;
 }
