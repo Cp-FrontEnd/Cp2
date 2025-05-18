@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  background-color: rgb(15, 15, 15);
+  box-sizing: border-box;
+}
+    
+nav {
+  background-color: rgb(31, 30, 30);
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  color: antiquewhite;
+}
+
+
+.barra {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.barra a {
+    text-decoration: none;
+    color: rgb(206, 205, 205);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.barra a:hover {
+    color: #555;
+}
+
+span{
+    color: red;
+}
+
+.titulo-nav {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  font-size: 2.8rem;
+  margin: 0;
+  padding: 30px 40px;
+
+}
+
+.produtos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.produto {
+  margin-top: 20px;  
+  background-color: rgba(26, 26, 26, 0.986);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  border: red solid 1px;
+  color: rgb(225, 228, 230);
+}
+
+.produto:hover {
+  transform: scale(1.03);
+}
+
+.produto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.produto-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.produto-info h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+}
+
+.produto-info p {
+  color: #74b177;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+@media (max-width: 900px) {
+  .produtos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .produtos-container {
+    grid-template-columns: 1fr;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .produto img {
+    height: 160px;
+  }
+}
