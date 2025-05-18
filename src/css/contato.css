@@ -1,0 +1,224 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lucida Sans', sans-serif;
+    color: white;
+    background-color: black;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Imagem de fundo */
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/imgs/Tesla.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+}
+
+/* Header */
+header {
+        background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 90%;
+    border-radius: 15px;
+    margin: 20px auto 0; 
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    top: 0;         
+}
+
+#titulo_nav {
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+
+#titulo_nav span {
+    color: red;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.header-menu li a:hover {
+    color: red;
+}
+
+/* Título principal */
+main {
+    padding-top: 8rem;
+    text-align: center;
+}
+
+#title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Formulário de contato */
+section {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.input-row input {
+    flex: 1;
+}
+
+/* Inputs */
+section input[type="text"],
+section input[type="tel"],
+section input[type="email"] {
+    padding: 1.2rem;
+    border: 2px solid white;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+}
+
+section input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+section input[type="button"] {
+    background-color: red;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+section input[type="button"]:hover {
+    background-color: white;
+    color: red;
+}
+
+/* Footer */
+footer {
+    margin-top: 5rem;
+    padding: 3rem 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+}
+
+.display h5 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.display ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.6rem;
+}
+
+.display ul li {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#display2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 2rem;
+    font-size: 1.4rem;
+}
+
+#navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#navegacao a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+}
+
+#navegacao a:hover {
+    color: red;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    #display2 {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
