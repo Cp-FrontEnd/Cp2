@@ -11,3 +11,5 @@ figma </br>
 https://www.figma.com/design/bkAoxWfVlvaJ0p47g1sS1j/Untitled?node-id=0-1&t=3rmzE9pAGhIZW7iP-1
 </br>
 Github Pages
+
+https://cp-frontend.github.io/Cp2/
